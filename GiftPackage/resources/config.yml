@@ -1,0 +1,17 @@
+---
+#
+# Message Or Cost Settings
+#
+# {title} = Plugin-Title
+#
+No-Money-Message: "{title} §7You Haven't Got Money !"
+No-Numerical-Message: "{title} §7Write A Numerical Value, Please !"
+Buy-Item-Message: "{title} §7Successfully Received Gift Package !"
+Plugin-Title: "§4GiftPackage > "
+GiftPackage-Cost: 10000
+
+Items:
+  - "1:0:5"
+  - "2:0:4:Test"
+  - "3:0:3:§4Test"
+...
