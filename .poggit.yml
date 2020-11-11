@@ -6,7 +6,4 @@ projects:
   GiftPackage:
     path: GiftPackage/
     icon: "icon.png"
-    libs:
-    - src: poggit-orphanage/EconomyS/EconomyAPI
-      version: ^3.0.0
 ...
