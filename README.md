@@ -5,3 +5,5 @@
 Download the plugin EconomyAPI: https://poggit.pmmp.io/p/economyapi
 
 PHAR: https://poggit.pmmp.io/ci/ByAlperenS/GiftPackage/GiftPackage
+
+YouTube Video Link: https://www.youtube.com/watch?v=FhtI4MIKglw
