@@ -4,4 +4,4 @@
 
 Download the plugin EconomyAPI: https://poggit.pmmp.io/p/economyapi
 
-https://poggit.pmmp.io/ci/ByAlperenS/GiftPackage/GiftPackage
+PHAR: https://poggit.pmmp.io/ci/ByAlperenS/GiftPackage/GiftPackage
