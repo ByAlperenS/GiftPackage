@@ -2,7 +2,7 @@
 
 /*
  * Author: ByAlperenS
- * Contect:
+ * Contact:
  *   - Messenger: Alperen Sancak
  *   - Facebook: Alperen Sancak
  *   - Discord: ByAlperenS#5361
