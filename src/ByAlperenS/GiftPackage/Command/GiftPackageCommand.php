@@ -2,7 +2,7 @@
 
 namespace ByAlperenS\GiftPackage\Command;
 
-use ByAlperenS\GiftPackage\GiftPackage;
+use ByAlperenS\GiftPackage\Main;
 use pocketmine\command\{PluginCommand, CommandSender};
 use pocketmine\item\Item;
 use pocketmine\item\ItemFactory;
@@ -11,10 +11,10 @@ use pocketmine\utils\TextFormat as C;
 
 class GiftPackageCommand extends PluginCommand{
 
-    /** @var GiftPackage */
+    /** @var Main */
     private $plugin;
 
-    public function __construct(GiftPackage $plugin){
+    public function __construct(Main $plugin){
         parent::__construct("giftpackage", $plugin);
         $this->setAliases(['gp']);
         $this->setDescription("Gift Package Commands");
@@ -32,12 +32,12 @@ class GiftPackageCommand extends PluginCommand{
         if (isset($args[0])){
             switch ($args[0]){
                 case "help":
-                    $p->sendMessage(C::GRAY . "[ " . C::RED . "GiftPackage" . C::GRAY . " ]");
+                    $p->sendMessage(C::GRAY . "[ " . C::RED . "Main" . C::GRAY . " ]");
                     $p->sendMessage(C::GRAY . "/giftpackage help");
                     $p->sendMessage(C::GRAY . "/giftpackage buy [Count]");
                     break;
                 case "buy":
-                     $cost = $config->get("GiftPackage-Cost");
+                     $cost = $config->get("Main-Cost");
                     if (isset($args[1])){
                         if (!is_numeric($args[1])){
                             $p->sendMessage(str_replace("{title}", $plugintitle, $config->get("No-Numerical-Message")));
@@ -50,7 +50,7 @@ class GiftPackageCommand extends PluginCommand{
                         $this->plugin->economyGet()->reduceMoney($p, $args[1] * $cost);
                         $item = ItemFactory::get(Item::CHEST);
                         $item->setCustomName(C::GOLD . "Gift Package");
-                        $item->setLore(["GiftPackage"]);
+                        $item->setLore(["Main"]);
                         $item->setCount($args[1]);
                         $p->getInventory()->addItem($item);
                         $p->sendMessage(str_replace("{title}", $plugintitle, $config->get("Buy-Item-Message")));
