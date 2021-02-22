@@ -4,6 +4,5 @@ branches:
 - master
 projects:
   GiftPackage:
-    path: ""
     icon: "icon.png"
 ...
