@@ -8,8 +8,8 @@
 - /giftpackage help
 - /gp help
 
-Download the plugin EconomyAPI: https://poggit.pmmp.io/p/economyapi
+**Description:**
+This plugin adds a custom looking gift package to your server.
 
-PHAR: https://poggit.pmmp.io/ci/ByAlperenS/GiftPackage/GiftPackage
-
-YouTube Video Link: https://www.youtube.com/watch?v=FhtI4MIKglw
+**Permissions:**
+ * Only OP
