@@ -33,7 +33,7 @@ class EventListener implements Listener{
         $item = $e->getItem();
         $block = $e->getBlock();
 
-        if ($item->getId() == Item::CHEST and $item->getCustomName() == C::GOLD . "Gift Package" and $item->getLore() == ["Main"]){
+        if ($item->getId() == Item::CHEST and $item->getCustomName() == C::GOLD . "Gift Package" and $item->getLore() == ["GiftPackage"]){
             $path = Server::getInstance()->getDataPath() . "plugin_data/Main/Texture/giftpackage.png";
             $skin = Utils::getSkinFromFile($path);
             $nbt = Entity::createBaseNBT(new Vector3($block->getX(), $block->getY() + 1, $block->getZ()));
