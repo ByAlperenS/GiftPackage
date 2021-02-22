@@ -1,5 +1,5 @@
 name: GiftPackage
-main: ByAlperenS\GiftPackage\GiftPackage
+main: ByAlperenS\GiftPackage\Main
 api: 3.9.4
 author: ByAlperenS
 version: 1.0
