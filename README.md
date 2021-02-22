@@ -9,6 +9,7 @@
 - /gp help
 
 **Description:**
+
 This plugin adds a custom looking gift package to your server.
 
 **Permissions:**
