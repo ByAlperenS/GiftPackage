@@ -34,9 +34,9 @@ class EventListener implements Listener{
         $block = $e->getBlock();
 
         if ($item->getId() == Item::CHEST and $item->getCustomName() == C::GOLD . "Gift Package" and $item->getLore() == ["GiftPackage"]){
-            $path = Server::getInstance()->getDataPath() . "plugin_data/Main/Texture/giftpackage.png";
+            $path = Server::getInstance()->getDataPath() . "plugin_data/GiftPackage/Texture/giftpackage.png";
             $skin = Utils::getSkinFromFile($path);
-            $nbt = Entity::createBaseNBT(new Vector3($block->getX(), $block->getY() + 1, $block->getZ()));
+            $nbt = Entity::createBaseNBT(new Vector3($block->getFloorX(), $block->getFloorY(), $block->getFloorZ()));
             $nbt->setTag(new CompoundTag("Skin", [
                 new StringTag("Data", $skin->getSkinData()),
                 new StringTag("Name", "giftpackage"),
